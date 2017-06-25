@@ -1,0 +1,127 @@
+font-face {
+    font-family: lucidarande;
+    src: url('../fonts/LucidaGrandeRegular');
+}
+
+body {
+	background: rgb(255, 255, 255);
+	color: rgb(59, 67, 68);
+	font-family: "Lucida Grande", 'Lucida Sans', Verdana, Tahoma, sans-serif;
+	font-size:16px;
+
+}
+/******* Common css for different tag types *************/
+h1, h2, h3 {
+	/*text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);*/
+	padding: 0 0 1em 0;
+}
+
+h1 {
+	color: red;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: orange;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+a:link, a:visited {
+	color:rgb(241, 47, 93, 08);
+}
+
+a: hover {
+	color:rgb(241, 47, 93);
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li a:link,
+ul li a:visited {
+	display: block;
+	text-decoration: none;
+	color:rgb(66,148,182);
+	border-bottom: 2px solid rgb(232,243,248);
+} 
+
+ul li a: hover {
+	background: rgba(232, 243, 248, 03);
+}
+/*******END Common css for different tag types *************/
+.wrapper {
+	width: 940px;
+	margin:0 auto;
+}
+/****** Header of the body = logo + navigation *******/
+header {
+	/*border: 1px solid black;*/
+	height: 40px;
+	line-height: 40px;
+	padding: 40px 0 10px 0;
+	margin: 30px auto;
+}
+header h1 {
+	/*border: 1px solid red;*/
+	font-size: 1.8em;
+	color: #66d9ef;
+	width: 35%;
+	height: 35%;
+	float: left;
+}
+
+nav.leading-nav ul {
+	/*border:1px solid purple;*/
+	width: 60%;
+	height: 30%;
+	display: flex;/*inline-block;*/
+	float: right;
+}
+nav.leading-nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: bold;
+	
+}
+/****** Header of the body = logo + navigation *******/
+
+/***** main of the body *******/
+.content {
+	/*border:1px solid black;*/
+	position:relative;
+}
+.article {
+	float:left;
+	width:57%; /*540px*/
+}
+.aside {
+	width:32%;
+	float: right;
+}
+.aside-nav li {
+	margin: 10px 0;
+}
+
+.box {
+	border-bottom: 1px solid rgb(219, 230, 236);
+	padding: 1em 0 1em 0;
+	text-align: justify;
+}
+
+/****** Footer *******/
+.fc {
+	/*border: 1px solid black;*/
+	clear:both;
+	background:#66d9ef;
+	height:50px;
+	line-height: 50px;
+
+
+}
